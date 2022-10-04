@@ -1,21 +1,24 @@
 package libreria.tienda;
 
+import libreria.cliente.Clientes;
+import libreria.libros.Libros;
+import libreria.personal.Personal;
+
 import java.lang.reflect.Array;
+import java.util.HashSet;
 
 public class Tienda {
     //Tienda: nombre de la tienda, direccion, lista de clientes, lista de empleados, lista de libros
     private String nombreTienda;
     private String direccion;
-    private Array listaCleintes;
-    private Array listaEmpleados;
-    private Array listaLibros;
 
-    public Tienda(String nombreTienda, String direccion, Array listaCleintes, Array listaEmpleados, Array listaLibros) {
+    HashSet<Clientes> cliente=new HashSet<Clientes>();
+    HashSet<Personal> empleados=new HashSet<Personal>();
+    HashSet<Libros> libros=new HashSet<Libros>();
+
+    public Tienda(String nombreTienda, String direccion) {
         this.nombreTienda = nombreTienda;
         this.direccion = direccion;
-        this.listaCleintes = listaCleintes;
-        this.listaEmpleados = listaEmpleados;
-        this.listaLibros = listaLibros;
     }
 
     public String getNombreTienda() {
@@ -34,27 +37,27 @@ public class Tienda {
         this.direccion = direccion;
     }
 
-    public Array getListaCleintes() {
-        return listaCleintes;
+    public HashSet<Clientes> getCliente() {
+        return cliente;
     }
 
-    public void setListaCleintes(Array listaCleintes) {
-        this.listaCleintes = listaCleintes;
+    public void setCliente(HashSet<Clientes> cliente) {
+        this.cliente = cliente;
     }
 
-    public Array getListaEmpleados() {
-        return listaEmpleados;
+    public HashSet<Personal> getEmpleados() {
+        return empleados;
     }
 
-    public void setListaEmpleados(Array listaEmpleados) {
-        this.listaEmpleados = listaEmpleados;
+    public void setEmpleados(HashSet<Personal> empleados) {
+        this.empleados = empleados;
     }
 
-    public Array getListaLibros() {
-        return listaLibros;
+    public HashSet<Libros> getLibros() {
+        return libros;
     }
 
-    public void setListaLibros(Array listaLibros) {
-        this.listaLibros = listaLibros;
+    public void setLibros(HashSet<Libros> libros) {
+        this.libros = libros;
     }
 }

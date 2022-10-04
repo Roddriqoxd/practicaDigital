@@ -1,11 +1,10 @@
 package libreria.cliente;
 
+import libreria.interfaces.Imprimable;
+
 import java.util.Date;
 
-public class Clientes {
-    //nombres, apellidos, numero de CI, extension de CI, indicar si es un cliente nuevo
-    // (se considera un cliente nuevo solo si hizo una compra, si hace otra compra,
-    // se considera como cliente antiguo), libros comprados, fecha de nacimiento, cooreo
+public class Clientes implements Imprimable {
     private String nombre;
     private String apellidos;
     private long CI;
@@ -78,5 +77,12 @@ public class Clientes {
 
     public void setCorreo(String correo) {
         this.correo = correo;
+    }
+
+    @Override
+    public String imprimir() {
+            return this.nombre + "  " + this.apellidos + "  " + this.CI + "  " +
+                    this.antiguedad + "  " + this.librosComprados + " " + this.fecha + " " + this.correo;
+
     }
 }

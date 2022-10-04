@@ -1,2 +1,6 @@
-package libreria.interfaces;public interface Imprimable {
+package libreria.interfaces;
+
+public interface Imprimable {
+    String imprimir();
+
 }

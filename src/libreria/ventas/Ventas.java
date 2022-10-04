@@ -15,10 +15,10 @@ public class Ventas {
     private double precioOriginal;
     private double procentajeDescuento; //solo cliente antiguo
     private double precioDescuento;
-    private Date fechaVenta;
+    private String fechaVenta;
     private String codigoVenta; //sin la letra ñ --> example: ORA54
 
-    public Ventas(String cliente, String libroComprado, String cajero, double precioOriginal, double procentajeDescuento, double precioDescuento, Date fechaVenta, String codigoVenta) {
+    public Ventas(String cliente, String libroComprado, String cajero, double precioOriginal, double procentajeDescuento, double precioDescuento, String fechaVenta, String codigoVenta) {
         this.cliente = cliente;
         this.libroComprado = libroComprado;
         this.cajero = cajero;
@@ -77,11 +77,11 @@ public class Ventas {
         this.precioDescuento = precioDescuento;
     }
 
-    public Date getFechaVenta() {
+    public String getFechaVenta() {
         return fechaVenta;
     }
 
-    public void setFechaVenta(Date fechaVenta) {
+    public void setFechaVenta(String fechaVenta) {
         this.fechaVenta = fechaVenta;
     }
 
