@@ -26,11 +26,11 @@ public class Main {
         List<Personal> lista=Arrays.asList(personal1,personal2);
         //Clientes
         Clientes cliente1 =new Clientes("Pedro","Ramirez",515224,true,5,"03/05/2022",null);
-        Clientes cliente2 =new Clientes("Pedro","Ramirez",515224,false,1,"03/08/2022","clienteAntiguo@dd.com");
+        Clientes cliente2 =new Clientes("Sebastian","Lopez",588745,false,1,"03/08/2022","clienteAntiguo@dd.com");
         List<Clientes> lista2=Arrays.asList(cliente1,cliente2);
         //Libros
         Libros libro1 =new Libros("El Principito","Es el personaje principal del libro. Vive en un pequeño planeta","Antoine de Saint-Exupéry",FANTASIA,"Oceano",true,50,"pri001",10);
-        Libros libro2 =new Libros("El Principito","Es el personaje principal del libro. Vive en un pequeño planeta","Antoine de Saint-Exupéry",TERROR,"Oceano",false,50,"pri002",0);
+        Libros libro2 =new Libros("Harry Potter","El personaje es un hechicero","J. K. Rowling",TERROR,"Oceano",false,100,"pri002",0);
         List<Libros> lista3=Arrays.asList(libro1,libro2);
         //Tienda
         Tienda tienda=new Tienda("Libreria Vanguardia","Calle Demetrio Perez N°365");
